@@ -5,7 +5,8 @@
 
 
 1. Download the data required. They can be found at https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
-   Unzip the following files to the same directory.
+
+Unzip the following files to the same directory.
 
 	* activity_labels.txt
 	* features.txt
@@ -32,4 +33,4 @@
 	* Descriptive variable names (From features.txt) were used to label the features data set.
 	* The final data set contains the average of each variable for each activity and each subject will be saved to a file tidy_data.txt
 
-5. The cleaned data set will be spooled to a file (tidy_data.txt) in the working directory.
+5. The cleaned data set will be written to a file (tidy_data.txt) in the working directory.
