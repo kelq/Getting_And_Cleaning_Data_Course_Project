@@ -15,7 +15,7 @@ The data came from the following files:
 * features.txt: A listing of the 561 measured features.
 * subject_test.txt & subject_train.txt: The handphone users (subjects)involved in the observations for the test set and the training sets.
 * X_test.txt & X_train.txt: The observations for the 561 measured features of all subjects from test set and training set.
-* Y_test.txt & Y_train.txt: All observations of the activity of all subjects from test set and training set.
+* y_test.txt & y_train.txt: All observations of the activity of all subjects from test set and training set.
 
 * In addition, the file features_info.txt briefly explained the origins and the data found in X_test.txt and X_train.txt
 
@@ -92,7 +92,7 @@ The data came from the following files:
 ```
 
 ### 5. activity
-##### This data frame variables stores all observations of activity (value from 1 to 6) from both testing set and training set ( from both Y_test.txt and Y_train.txt): 
+##### This data frame variables stores all observations of activity (value from 1 to 6) from both testing set and training set ( from both y_test.txt and y_train.txt): 
 
 ```sh
 > head(activity)
