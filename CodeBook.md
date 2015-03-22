@@ -1,12 +1,38 @@
 ### Getting and Cleaning Data Course Project
 # CodeBook
-##### This codebook describes the variables used to perform the tidying of the data.
+##### This codebook describes:
+#####   - the data, 
+#####   - the transformation,
+#####   - and the variables used to perform the tidying of the data.
 
 ---
 
-## Variables
+## The Data
 
-### activityLabels
+The data came from the following files:
+
+* activity_labels.txt: A mapping of the actual activity to the activity factor being used in Y_test.txt and Y_train.txt
+* features.txt: A listing of the 561 measured features.
+* subject_test.txt & subject_train.txt: The handphone users (subjects)involved in the observations for the test set and the training sets.
+* X_test.txt & X_train.txt: The observations for the 561 measured features of all subjects from test set and training set.
+* Y_test.txt & Y_train.txt: All observations of the activity of all subjects from test set and training set.
+
+In addition, the file features_info.txt briefly explained the origins and the data found in X_test.txt and X_train.txt
+---
+
+## Data transformation
+
+* Merged the training and the test sets to create one data set.
+* Extracts only the 68 measurements on the mean and standard deviation for each measurement. 
+* Descriptive activity names (From activity_labels.txt)were used to name the activities in the data set.
+* Descriptive variable names (From features.txt) were used to label the features data set.
+* The final data contains the average of each variable for each activity and each subject.
+
+---
+
+## The variables used in run_analysis.R
+
+### 1. activityLabels
 ##### This variable stores the contents of the file activity.txt:
 
 ```sh
@@ -19,8 +45,8 @@
 5  5           STANDING
 6  6             LAYING
 ```
-### featureNames
-##### This variable stores the contents from features.txt i.e. the 561 measured variables:
+### 2. featureNames
+##### This variable stores the contents from features.txt i.e. the 561 measured features:
 ```sh
 > head(featureName)
   V1                V2
@@ -32,7 +58,7 @@
 6  6  tBodyAcc-std()-Z
 ```
 
-### selectedFeatures
+### 3. selectedFeatures
 ##### Onlynly measurements for mean and standard deviation are required. This variables stores the column number and the measurement name for the required measurements:
 
 ```sh
@@ -50,7 +76,7 @@
 44 44  tGravityAcc-std()-X
 ```
 
-### subjects
+### 4. Subjects
 ##### This data frame variable stores the subject ID from both the testing set and the training set:
 
 ```sh
@@ -64,7 +90,7 @@
 6  2
 ```
 
-### activity
+### 5. activity
 ##### This data frame variables stores all observations of activity (value from 1 to 6) from both testing set and training set ( from both Y_test.txt and Y_train.txt): 
 
 ```sh
@@ -78,8 +104,8 @@
 6  5
 ```
 
-### features.test & features.train & features
-##### features.test variable stores all observations of all 561 measured variables from the testing set (i.e. X_test.txt).
+### 6. features.test & features.train & features
+##### features.test variable stores all observations of all 561 measured features from the testing set (i.e. X_test.txt).
 ##### features.train stores the observations from the training set (i.e. X_train.txt). ##### features stores the combination from both features.test and features.train, and only the selected columns:
 
 ```sh
@@ -100,7 +126,7 @@
 1 -0.9073076
 ```
 
-### allData
+### 7. allData
 ##### This variable stores the combination of the subject, activity and features variables:
 ```sh
 > head(allData,1)
@@ -132,7 +158,7 @@
 1                 -0.9073076
 ```
 
-### secondDS, finalData
+### 8. secondDS, finalData
 ##### secondDS variable stores the melt-ed version of the allData data frame.
 ##### finalData stores the final data data set with the mean computed for each combination of (Subject, Activity):
 ```sh
