@@ -27,7 +27,7 @@ The data came from the following files:
 * Extracts only the 68 measurements on the mean and standard deviation for each measurement. 
 * Descriptive activity names (From activity_labels.txt)were used to name the activities in the data set.
 * Descriptive variable names (From features.txt) were used to label the features data set.
-* The final data contains the average of each variable for each activity and each subject.
+* The final data set contains the average of each variable for each activity and each subject.
 
 ---
 
