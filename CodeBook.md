@@ -2,7 +2,7 @@
 # CodeBook
 ##### This codebook describes:
 #####   - the data, 
-#####   - the transformation,
+#####   - data transformation,
 #####   - and the variables used to perform the tidying of the data.
 
 ---
@@ -17,7 +17,8 @@ The data came from the following files:
 * X_test.txt & X_train.txt: The observations for the 561 measured features of all subjects from test set and training set.
 * Y_test.txt & Y_train.txt: All observations of the activity of all subjects from test set and training set.
 
-In addition, the file features_info.txt briefly explained the origins and the data found in X_test.txt and X_train.txt
+* In addition, the file features_info.txt briefly explained the origins and the data found in X_test.txt and X_train.txt
+
 ---
 
 ## Data transformation
@@ -30,7 +31,7 @@ In addition, the file features_info.txt briefly explained the origins and the da
 
 ---
 
-## The variables used in run_analysis.R
+## The variables used
 
 ### 1. activityLabels
 ##### This variable stores the contents of the file activity.txt:
