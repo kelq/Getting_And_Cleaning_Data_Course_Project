@@ -6,7 +6,7 @@
 
 1. Download the data required. They can be found at https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
-Unzip the following files to the same directory (Note: This might require you to copy out the files from the test and train folders).
+	Unzip the following files to the same directory (Note: This might require you to copy out the files from the test and train folders).
 
 	* activity_labels.txt
 	* features.txt
@@ -16,8 +16,8 @@ Unzip the following files to the same directory (Note: This might require you to
 	* X_train.txt
 	* y_test.txt
 	* y_train.txt
-		  
-   Set your R session's working directory to where the following files can be found.
+	
+	Set your R session's working directory to where the following files can be found.
 
 2. The following libraries will need to be installed. The program will load these libraries during runtime.
 	* data.table
