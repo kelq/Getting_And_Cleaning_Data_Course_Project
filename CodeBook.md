@@ -1,5 +1,6 @@
 ### Getting and Cleaning Data Course Project
 # CodeBook
+
 ##### This codebook describes:
 #####   - the data, 
 #####   - data transformation,
