@@ -43,7 +43,7 @@ secondDS<-melt(allData, id=c("Subject", "Activity"))
 finalData<-dcast(secondDS, Subject + Activity ~ variable, mean)
 
 # Write contents of final tidy data set to the file tidy_data.txt
-write.table(finalData, file = "~/tidy_data.txt", row.names = FALSE)
+write.table(finalData, file = "tidy_data.txt", row.names = FALSE)
 
 # End
 
