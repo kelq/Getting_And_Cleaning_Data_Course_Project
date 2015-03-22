@@ -19,10 +19,10 @@
    Set your R session's working directory to where the following files can be found.
 
 2. The following libraries will need to be installed. The program will load these libraries during runtime.
-* data.table
-* dplyr
+	* data.table
+	* dplyr
 
-3. Source the program - run_analysis.R
+3. Source and run the program - run_analysis.R
 
 4. The program will perform the following:
 
