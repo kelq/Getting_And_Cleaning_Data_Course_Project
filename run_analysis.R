@@ -1,6 +1,6 @@
-###
+####
 # Getting and Cleaning Data - Course Project
-###
+####
 
 # load required libraries
 library(data.table)
