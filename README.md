@@ -17,15 +17,15 @@
 	* y_test.txt
 	* y_train.txt
 	
-	Set your R session's working directory to where the following files can be found.
+2. Set your R session's working directory to where the following files can be found.
 
-2. The following libraries will need to be installed. The program will load these libraries during runtime.
+3. The following libraries will need to be installed. The program will load these libraries during runtime.
 	* data.table
 	* dplyr
 
-3. Source and run the program - run_analysis.R
+4. Source and run the program - run_analysis.R
 
-4. The program will perform the following:
+5. The program will perform the following:
 
 	* Merged the training and the test sets to create one data set.
 	* Extracts only the 68 measurements on the mean and standard deviation for each measurement.
@@ -33,4 +33,4 @@
 	* Descriptive variable names (From features.txt) were used to label the features data set.
 	* The final data set contains the average of each variable for each activity and each subject will be saved to a file tidy_data.txt
 
-5. The cleaned data set will be written to a file (tidy_data.txt) in the working directory.
+6. The cleaned data set will be written to a file (tidy_data.txt) in the working directory.
