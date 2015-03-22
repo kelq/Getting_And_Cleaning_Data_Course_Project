@@ -26,10 +26,10 @@
 
 4. The program will perform the following:
 
-* Merged the training and the test sets to create one data set.
-* Extracts only the 68 measurements on the mean and standard deviation for each measurement.
-* Descriptive activity names (From activity_labels.txt)were used to name the activities in the data set.
-* Descriptive variable names (From features.txt) were used to label the features data set.
-* The final data set contains the average of each variable for each activity and each subject will be saved to a file tidy_data.txt
+	* Merged the training and the test sets to create one data set.
+	* Extracts only the 68 measurements on the mean and standard deviation for each measurement.
+	* Descriptive activity names (From activity_labels.txt)were used to name the activities in the data set.
+	* Descriptive variable names (From features.txt) were used to label the features data set.
+	* The final data set contains the average of each variable for each activity and each subject will be saved to a file tidy_data.txt
 
 5. The cleaned data set will be spooled to a file (tidy_data.txt) in the working directory.
